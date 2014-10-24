@@ -23,5 +23,14 @@ class Main {
             .topAwC()
             .remA();
         System.out.println(p2.toString());
+
+        Pizza p3 = new Spinach(
+                new Olive(
+                    new Anchovy(
+                        new Cheese(
+                            new Anchovy(
+                                new Crust())))))
+            .subAbC();
+        System.out.println(p3.toString());
     }
 }

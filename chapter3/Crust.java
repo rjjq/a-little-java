@@ -7,4 +7,7 @@ class Crust extends Pizza {
     Pizza topAwC() {
         return new Crust();
     }
+    Pizza subAbC() {
+        return new Crust();
+    }
 }

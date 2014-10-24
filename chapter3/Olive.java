@@ -9,7 +9,10 @@ class Olive extends Pizza {
         return new Olive(p.remA());
     }
     Pizza topAwC() {
-        return new Sausage(p.topAwC());
+        return new Olive(p.topAwC());
+    }
+    Pizza subAbC() {
+        return new Olive(p.subAbC());
     }
     public String toString() {
         return "new " + getClass().getName() + "(" + p.toString() + ")";

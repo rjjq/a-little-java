@@ -1,18 +1,18 @@
 package chapter3;
 
-class Cheese extends Pizza {
+class Spinach extends Pizza {
     Pizza p;
-    Cheese(Pizza _p) {
+    Spinach(Pizza _p) {
         p = _p;
     }
     Pizza remA() {
-        return new Cheese(p.remA());
+        return new Spinach(p.remA());
     }
     Pizza topAwC() {
-        return new Cheese(p.topAwC());
+        return new Spinach(p.topAwC());
     }
     Pizza subAbC() {
-        return new Cheese(p.subAbC());
+        return new Spinach(p.subAbC());
     }
     public String toString() {
         return "new " + getClass().getName() + "(" + p.toString() + ")";

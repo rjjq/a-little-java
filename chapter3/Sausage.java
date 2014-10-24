@@ -11,6 +11,9 @@ class Sausage extends Pizza {
     Pizza topAwC() {
         return new Sausage(p.topAwC());
     }
+    Pizza subAbC() {
+        return new Sausage(p.subAbC());
+    }
     public String toString() {
         return "new " + getClass().getName() + "(" + p.toString() + ")";
     }

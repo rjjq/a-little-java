@@ -6,12 +6,16 @@ class Anchovy extends Pizza {
         p = _p;
     }
     Pizza remA() {
-        return new Crust();
+        return p.remA();
     }
     Pizza topAwC() {
         return new Cheese(
                 new Anchovy(
                     p.topAwC()));
+    }
+    Pizza subAbC() {
+        return new Cheese(
+                p.subAbC());
     }
     public String toString() {
         return "new " + getClass().getName() + "(" + p.toString() + ")";
