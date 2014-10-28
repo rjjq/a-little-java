@@ -1,13 +1,13 @@
-package chapter3;
+package chapter4;
 
 class Crust extends Pizza {
     Pizza remA() {
-        return new Crust();
+        return remFn.forCrust();
     }
     Pizza topAwC() {
-        return new Crust();
+        return topFn.forCrust();
     }
     Pizza subAbC() {
-        return new Crust();
+        return subFn.forCrust();
     }
 }

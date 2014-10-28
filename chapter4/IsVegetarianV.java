@@ -1,5 +1,7 @@
+package chapter4;
+
 class IsVegetarianV {
-    boolean forSkewer () {
+    boolean forSkewer() {
         return true;
     }
     boolean forOnion(Shish s) {
@@ -10,5 +12,8 @@ class IsVegetarianV {
     }
     boolean forTomato(Shish s) {
         return s.isVegetarian();
+    }
+    public String toString() {
+        return "new " + getClass().getName() + "()";
     }
 }

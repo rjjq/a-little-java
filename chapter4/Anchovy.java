@@ -1,4 +1,4 @@
-package chapter3;
+package chapter4;
 
 class Anchovy extends Pizza {
     Pizza p;
@@ -6,16 +6,13 @@ class Anchovy extends Pizza {
         p = _p;
     }
     Pizza remA() {
-        return p.remA();
+        return remFn.forAnchovy(p);
     }
     Pizza topAwC() {
-        return new Cheese(
-                new Anchovy(
-                    p.topAwC()));
+        return topFn.forAnchovy(p);
     }
     Pizza subAbC() {
-        return new Cheese(
-                p.subAbC());
+        return subFn.forAnchovy(p);
     }
     public String toString() {
         return "new " + getClass().getName() + "(" + p.toString() + ")";

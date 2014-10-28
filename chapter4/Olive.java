@@ -1,4 +1,4 @@
-package chapter3;
+package chapter4;
 
 class Olive extends Pizza {
     Pizza p;
@@ -6,13 +6,13 @@ class Olive extends Pizza {
         p = _p;
     }
     Pizza remA() {
-        return new Olive(p.remA());
+        return remFn.forOlive(p);
     }
     Pizza topAwC() {
-        return new Olive(p.topAwC());
+        return topFn.forOlive(p);
     }
     Pizza subAbC() {
-        return new Olive(p.subAbC());
+        return subFn.forOlive(p);
     }
     public String toString() {
         return "new " + getClass().getName() + "(" + p.toString() + ")";
