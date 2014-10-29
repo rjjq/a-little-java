@@ -1,6 +1,6 @@
 package chapter5;
 
-abstract class Fish {
+abstract class Num {
     public String toString() {
         return "new " + getClass().getName() + "()";
     }

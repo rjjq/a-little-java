@@ -11,4 +11,7 @@ class RemAV {
             return new Top(t, r.remA());
         }
     }
+    public String toString() {
+        return "new " + getClass().getName() + "()";
+    }
 }
