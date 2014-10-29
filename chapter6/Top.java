@@ -10,10 +10,8 @@ class Top extends Pie {
     Pie rem(RemV remFn, Object o) {
         return remFn.forTop(t, r, o);
     }
-    Pie subst(SubstV substFn,
-            Object n,
-            Object o) {
-        return substFn.forTop(t, r, n, o);
+    Pie subst(SubstV substFn) {
+        return substFn.forTop(t, r);
     }
     public String toString() {
         return "new " + getClass().getName() + "(" + t.toString() + ", " + r.toString() + ")";

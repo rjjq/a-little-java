@@ -14,9 +14,8 @@ public class Main {
                 new Top(new Integer(2),
                     new Top(new Integer(3),
                         new Bot())))
-            .subst(new SubstV(),
-                    new Integer(5),
-                    new Integer(3));
+            .subst(new SubstV(new Integer(5),
+                    new Integer(3)));
         System.out.println(p1.toString());
     }
 }
