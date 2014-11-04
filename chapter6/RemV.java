@@ -1,16 +1,18 @@
 package chapter6;
 
-class RemV {
-    Pie forBot(Object o) {
+class RemV implements PieVisitorI {
+    Object o;
+    RemV(Object _o) {
+        o = _o;
+    }
+    public Pie forBot() {
         return new Bot();
     }
-    Pie forTop(Object t,
-            Pie r,
-            Object o) {
+    public Pie forTop(Object t, Pie r) {
         if (o.equals(t)) {
-            return r.rem(this, o);
+            return r.accept(this);
         } else {
-            return new Top(t, r.rem(this, o));
+            return new Top(t, r.accept(this));
         }
     }
     public String toString() {

@@ -1,7 +1,9 @@
 package chapter6;
 
-abstract class Pie {
-    abstract Pie accept(PieVisitorI ask);
+class Tuna extends Fish {
+    public boolean equals(Object o) {
+        return (o instanceof Tuna);
+    }
     public String toString() {
         return "new " + getClass().getName() + "()";
     }

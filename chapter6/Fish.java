@@ -5,3 +5,4 @@ abstract class Fish {
         return "new " + getClass().getName() + "()";
     }
 }
+
